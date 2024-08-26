@@ -6,6 +6,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Set;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -20,4 +22,7 @@ public class CourseEntity {
     private Integer course_id;
 
     private String name;
+
+    @OneToMany(mappedBy = "course")
+    private Set<StudentCourseEntity> studentCourses;
 }

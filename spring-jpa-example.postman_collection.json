@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "3a20ec9f-493b-41ef-8ea3-6476db719d06",
+		"name": "spring-jpa-example",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37576217"
+	},
+	"item": [
+		{
+			"name": "students",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{varLocalHost}}students",
+					"host": [
+						"{{varLocalHost}}students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "courses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{varLocalHost}}courses",
+					"host": [
+						"{{varLocalHost}}courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "students",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Jeff\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{varLocalHost}}students",
+					"host": [
+						"{{varLocalHost}}students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "courses",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Comp 100\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{varLocalHost}}courses",
+					"host": [
+						"{{varLocalHost}}courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "student-courses",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"student\" : {\r\n        \"student_id\" : 1,\r\n        \"name\" : \"Jeff\"\r\n    },\r\n    \"course\" : {\r\n        \"course_id\" : 1,\r\n        \"name\" : \"Comp 100\"\r\n    },\r\n    \"enrollmentDate\" : \"2024-08-26\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{varLocalHost}}student-courses",
+					"host": [
+						"{{varLocalHost}}student-courses"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
