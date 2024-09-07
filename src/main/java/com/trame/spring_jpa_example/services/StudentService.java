@@ -8,4 +8,6 @@ public interface StudentService {
     StudentEntity save(StudentEntity studentEntity);
 
     List<StudentEntity> findAll();
+
+    boolean isExists(Integer id);
 }

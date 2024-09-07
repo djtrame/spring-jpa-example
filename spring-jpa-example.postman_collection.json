@@ -102,6 +102,46 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "students",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Louie_updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{varLocalHost}}students/3",
+					"host": [
+						"{{varLocalHost}}students"
+					],
+					"path": [
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "student-courses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{varLocalHost}}student-courses",
+					"host": [
+						"{{varLocalHost}}student-courses"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }

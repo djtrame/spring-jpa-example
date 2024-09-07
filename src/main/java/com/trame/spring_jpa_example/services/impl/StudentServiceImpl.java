@@ -31,4 +31,9 @@ public class StudentServiceImpl implements StudentService {
                 false)
             .collect(Collectors.toList());
     }
+
+    @Override
+    public boolean isExists(Integer id) {
+        return studentRepository.existsById(id);
+    }
 }
